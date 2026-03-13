@@ -364,6 +364,10 @@ footer { background: var(--primary-bg); padding: 8rem 5% 4rem; border-top: 1px s
     .item-large, .item-wide { grid-column: span 2; }
 }
 @media (max-width: 1024px) {
+    .doctor-section, .journey-grid { grid-template-columns: 1fr; gap: 4rem; }
+    .journey-grid::before { display: none; }
+    .footer-grid { grid-template-columns: 1fr; gap: 4rem; }
+    .footer-col:last-child { grid-column: span 1; }
     nav { width: calc(100% - 2rem); top: 1rem; }
 }
 @media (max-width: 850px) {
